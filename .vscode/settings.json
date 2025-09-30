@@ -1,0 +1,23 @@
+{
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"editor.tabSize": 2,
+	"typescript.preferences.includePackageJsonAutoImports": "on",
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/.hg/store/**": true,
+		"node_modules/**/*": false
+	},
+	"tailwindCSS.classAttributes": ["class", "className", "theme"],
+	"tailwindCSS.experimental.classRegex": [
+		["twMerge\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+		["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+		[
+			"createTheme(?:<\\w+>)?\\s*\\(([^)]*)\\)",
+			"{?\\s?[\\w].*:\\s*?[\"'`]([^\"'`]*).*?,?\\s?}?"
+		]
+	]
+}
+
